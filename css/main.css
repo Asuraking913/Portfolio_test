@@ -36,7 +36,7 @@ body {
 .nav-container .nav-cont nav {
   display: none;
 }
-.nav-container .nav-cont a {
+.nav-container .nav-cont a.logo {
   font-family: sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -51,13 +51,17 @@ body {
 section.hero-sec {
   background-image: linear-gradient(to right, rgb(148, 161, 172), rgb(26, 114, 185), rgb(26, 114, 185));
   padding: 4em;
+  padding-bottom: -3em;
 }
 section.hero-sec .land {
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  flex-direction: row;
+  gap: 2rem;
+}
+section.hero-sec .land .cont, section.hero-sec .land .img-cont {
+  display: none;
 }
 section.hero-sec .land .intro-cont {
   display: flex;
@@ -256,4 +260,42 @@ section.service .web p, section.service .gui p, section.service .game p {
 .foot-container h2 {
   font-family: cursive;
   color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav-container {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.123);
+  }
+  .nav-container .nav-cont nav {
+    display: block;
+  }
+  .nav-container .nav-cont nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+  }
+  .nav-container .nav-cont nav ul a {
+    text-decoration: none;
+    color: white;
+  }
+  .nav-container .nav-cont .menu {
+    display: none;
+  }
+  .hero-sec {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+  .hero-sec .cont, .hero-sec .img-cont {
+    display: inline;
+    height: 500px;
+    width: 70%;
+  }
+  .hero-sec .cont {
+    background-color: blac;
+  }
 }/*# sourceMappingURL=main.css.map */

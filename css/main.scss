@@ -40,7 +40,7 @@ body {
             display: none;
         }
         
-        a {
+        a.logo {
             font-family: sans-serif;
             text-transform: uppercase;
             text-decoration: none; 
@@ -58,14 +58,19 @@ body {
 
 section.hero-sec {
     background-image: linear-gradient(to right,rgb(148, 161, 172), rgb(26, 114, 185), rgb(26, 114, 185));
-    padding: 1em;
+    padding: 4em;
+    padding-bottom: -3em;
 
     .land {
         width: 100%;
         height: auto;
         display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
+        flex-direction: row;
+        gap: 2rem;
+
+        .cont, .img-cont {
+            display: none;
+        }
 
         .intro-cont {
             display: flex;
@@ -303,5 +308,50 @@ section.service {
 }
 
 @media  only screen and (min-width: 1000px) {
-    
+    .nav-container {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.123);
+
+        .nav-cont {
+            
+            nav {
+                display: block;
+                
+                ul {
+                    display: flex;
+                    list-style-type: none;
+                    gap: 2rem;
+                    font-family: sans-serif;
+                    color: white;
+                    font-weight: bold;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+
+            .menu {
+                display: none;
+            }
+        }
+    }
+
+    .hero-sec {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        gap: 2em;
+
+        
+        .cont, .img-cont {
+            display: inline;
+            height: 500px;
+            width: 70%;
+        }
+
+        .cont {
+            background-color: blac;
+        }
+    }
 }
