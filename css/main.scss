@@ -305,7 +305,7 @@ section.service {
     }
 }
 
-@media  only screen and (min-width: 1000px) {
+@media  only screen and (min-width: 500px) {
     .nav-container {
         border-bottom: 2px solid rgba(255, 255, 255, 0.123);
 
@@ -394,7 +394,7 @@ section.service {
                 height: 100%;
                 width: 100%;
                 background-color: rgba(26, 113, 185, 0.397);
-
+                border-top-left-radius: 22em;
             }
         }
 
@@ -421,6 +421,31 @@ section.service {
                     gap: .2em;
                 }
             }
+        }
+    }
+
+    section.service {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .cont1 {
+            width: 60%;
+            font-family: sans-serif;
+        }
+
+        .cont2 {
+            display: flex;
+            flex-direction: row;
+            padding: 2em;
+            gap: 1rem;
+        }
+
+        .gui, .web, .game {
+            width: 50%;
+            // background-color : whitesmoke;
+            background-color: rgba(122, 151, 175, 0.87);
         }
     }
 }

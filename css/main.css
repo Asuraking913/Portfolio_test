@@ -261,7 +261,7 @@ section.service .web p, section.service .gui p, section.service .game p {
   color: white;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 500px) {
   .nav-container {
     border-bottom: 2px solid rgba(255, 255, 255, 0.123);
   }
@@ -332,6 +332,7 @@ section.service .web p, section.service .gui p, section.service .game p {
     height: 100%;
     width: 100%;
     background-color: rgba(26, 113, 185, 0.397);
+    border-top-left-radius: 22em;
   }
   section.land-sect .about {
     display: flex;
@@ -350,5 +351,25 @@ section.service .web p, section.service .gui p, section.service .game p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.2em;
+  }
+  section.service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  section.service .cont1 {
+    width: 60%;
+    font-family: sans-serif;
+  }
+  section.service .cont2 {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    gap: 1rem;
+  }
+  section.service .gui, section.service .web, section.service .game {
+    width: 50%;
+    background-color: rgba(122, 151, 175, 0.87);
   }
 }/*# sourceMappingURL=main.css.map */
