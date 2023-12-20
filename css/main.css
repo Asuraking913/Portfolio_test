@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(26, 114, 185);
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../font/Poppins-Regular.ttf);
+}
+body {
+  background-color: #e2dfdf;
+}
+
+.nav-container {
+  background-image: linear-gradient(to right, rgb(148, 161, 172), rgb(26, 114, 185), rgb(26, 114, 185));
+  width: auto;
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+}
+.nav-container .nav-cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+}
+.nav-container .nav-cont nav {
+  display: none;
+}
+.nav-container .nav-cont a {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6em;
+  font-weight: bolder;
+  color: white;
+}
+.nav-container .nav-cont .menu {
+  cursor: pointer;
+}
+
+section.hero-sec {
+  background-image: linear-gradient(to right, rgb(148, 161, 172), rgb(26, 114, 185), rgb(26, 114, 185));
+  padding: 4em;
+}
+section.hero-sec .land {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+section.hero-sec .land .intro-cont {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+section.hero-sec .land .intro-cont h1 {
+  color: white;
+  font-size: 2.5em;
+  font-family: "poppins";
+  font-weight: 700;
+}
+section.hero-sec .land .intro-cont h2 {
+  color: white;
+  font-style: italic;
+  font-family: "roboto";
+  font-size: 1.2em;
+}
+section.hero-sec .land .intro-cont h2 span {
+  font-style: normal;
+  padding-left: 0.5em;
+  color: black;
+}
+section.hero-sec .land .intro-cont p {
+  text-transform: capitalize;
+  font-family: "roboto";
+  color: white;
+  font-style: italic;
+  text-shadow: 0px 0px 2px black;
+}
+
+section.land-sect {
+  background-image: url("../images/mac.jpeg");
+  background-size: cover;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.land-sect .img-cont {
+  padding: 2em;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(26, 113, 185, 0.397);
+}
+section.land-sect .cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.land-sect .my-img {
+  background-image: url("../images/girl-image.jpeg");
+  height: 300px;
+  width: 190px;
+  border-radius: 0.5em;
+  background-size: cover;
+}
+section.land-sect .about {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.land-sect .about h3 {
+  text-transform: capitalize;
+  font-size: 1.2em;
+  color: white;
+  border-bottom: 5px solid white;
+  display: inline;
+}
+section.land-sect .about p.descp {
+  color: var(--primary-color);
+  text-shadow: 0px 0px 0px white;
+  margin-top: 1em;
+  font-family: "roboto";
+  font-weight: bold;
+  font-style: italic;
+}
+section.land-sect .about p {
+  color: rgb(214, 211, 211);
+  margin-top: 0.2em;
+  font-family: "Times New Roman";
+}
+section.land-sect .about .list {
+  padding: 0.1em;
+}
+section.land-sect .about .list ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.land-sect .about .list ul li {
+  color: rgb(214, 211, 211);
+  list-style-type: none;
+}
+section.land-sect .about .list ul li p {
+  text-decoration: none;
+  padding: 0.5em;
+  border: 2px solid var(--primary-color);
+  font-size: 1rem;
+  color: rgb(214, 211, 211);
+  text-shadow: 0px 0px 1px black;
+}
+section.land-sect .about .list ul li span {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+section.land-sect .about .resume {
+  margin-top: 1em;
+}
+section.land-sect .about a.resume {
+  padding: 0.5em 1em;
+  background-color: var(--primary-color);
+  background-image: linear-gradient(to left, rgb(175, 181, 187), rgb(26, 114, 185));
+  display: inline-block;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+  font-weight: bold;
+  border-radius: 1em;
+}
+
+section.service {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(122, 151, 175, 0.829);
+}
+section.service img {
+  height: 150px;
+  width: 150px;
+  border: 1px solid none;
+  margin: 0.2em;
+}
+section.service .cont1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+section.service .cont1 {
+  padding: 0.5em;
+}
+section.service .cont1 p:first-child {
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+  border-radius: 0.5em;
+  background-color: var(--primary-color);
+}
+section.service .cont1 h1 {
+  text-transform: capitalize;
+  font-family: "Lucida Sans";
+  margin: 0.5em;
+}
+section.service .cont1 p {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+section.service .cont1 .line {
+  background-color: var(--primary-color);
+  height: 2px;
+  width: 50%;
+  margin-top: 1em;
+}
+section.service .web, section.service .gui, section.service .game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 1em;
+}
+section.service .web h2, section.service .gui h2, section.service .game h2 {
+  text-transform: capitalize;
+  font-family: "poppins";
+}
+section.service .web p, section.service .gui p, section.service .game p {
+  color: white;
+}
+
+.foot-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+.foot-container h2 {
+  font-family: cursive;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
