@@ -60,9 +60,6 @@ section.hero-sec .land {
   flex-direction: row;
   gap: 2rem;
 }
-section.hero-sec .land .cont, section.hero-sec .land .img-cont {
-  display: none;
-}
 section.hero-sec .land .intro-cont {
   display: flex;
   gap: 1rem;
@@ -111,9 +108,11 @@ section.land-sect .cont {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
 }
 section.land-sect .my-img {
-  background-image: url("../images/girl-image.jpeg");
+  background-image: url("../images/photo1.jpg");
+  background-size: cover;
   height: 300px;
   width: 190px;
   border-radius: 0.5em;
@@ -128,8 +127,8 @@ section.land-sect .about {
 section.land-sect .about h3 {
   text-transform: capitalize;
   font-size: 1.2em;
-  color: white;
-  border-bottom: 5px solid white;
+  color: black;
+  border-bottom: 5px solid black;
   display: inline;
 }
 section.land-sect .about p.descp {
@@ -143,7 +142,7 @@ section.land-sect .about p.descp {
 section.land-sect .about p {
   color: rgb(214, 211, 211);
   margin-top: 0.2em;
-  font-family: "Times New Roman";
+  font-family: sans-serif;
 }
 section.land-sect .about .list {
   padding: 0.1em;
@@ -160,7 +159,7 @@ section.land-sect .about .list ul li {
 section.land-sect .about .list ul li p {
   text-decoration: none;
   padding: 0.5em;
-  border: 2px solid var(--primary-color);
+  border: 2px solid gray;
   font-size: 1rem;
   color: rgb(214, 211, 211);
   text-shadow: 0px 0px 1px black;
@@ -276,26 +275,80 @@ section.service .web p, section.service .gui p, section.service .game p {
     font-family: sans-serif;
     color: white;
     font-weight: bold;
+    font-size: 1.2em;
   }
   .nav-container .nav-cont nav ul a {
     text-decoration: none;
     color: white;
   }
+  .nav-container .nav-cont nav ul a:hover, .nav-container .nav-cont nav ul a:active {
+    color: rgb(103, 146, 182);
+  }
   .nav-container .nav-cont .menu {
     display: none;
   }
   .hero-sec {
-    height: 400px;
     display: flex;
     align-items: center;
-    gap: 2em;
   }
-  .hero-sec .cont, .hero-sec .img-cont {
-    display: inline;
+  .hero-sec .land {
+    display: flex;
+    align-items: center;
+  }
+  .hero-sec .land .cont, .hero-sec .land .img-cont {
+    display: block;
+  }
+  .hero-sec .land .cont {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-image: url("../images/photo.jpg");
+    background-size: cover;
+    border-radius: 4em;
+  }
+  .hero-sec .land .cont .img-cont {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(122, 151, 175, 0.342);
+    border-radius: 50%;
+  }
+  section.land-sect {
+    padding: 4em;
+    background-size: cover;
+  }
+  section.land-sect .img-cont {
+    border-radius: 1em;
+  }
+  section.land-sect .cont {
+    flex-direction: row;
+  }
+  section.land-sect .my-img {
     height: 500px;
-    width: 70%;
+    width: 80%;
+    border-top-left-radius: 40em;
   }
-  .hero-sec .cont {
-    background-color: blac;
+  section.land-sect .my-img .cont {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(26, 113, 185, 0.397);
+  }
+  section.land-sect .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  section.land-sect .about .about-me {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  section.land-sect .about .list ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2em;
   }
 }/*# sourceMappingURL=main.css.map */
