@@ -49,25 +49,41 @@ body {
 }
 
 section.hero-sec {
-  background-image: linear-gradient(to right, rgb(148, 161, 172), rgb(26, 114, 185), rgb(26, 114, 185));
+  background-image: url("../images/laptop-girl.png");
+}
+section.hero-sec .img-cont-a {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(26, 113, 185, 0.678);
+  background-size: contain;
   padding: 4em;
-  padding-bottom: -3em;
 }
 section.hero-sec .land {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: rem;
+  position: relative;
+}
+section.hero-sec .land .cont {
+  display: none;
 }
 section.hero-sec .land .intro-cont {
   display: flex;
   gap: 1rem;
   flex-direction: column;
+  width: 100%;
+}
+section.hero-sec .land .intro-cont .dots {
+  display: none;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 12em;
 }
 section.hero-sec .land .intro-cont h1 {
   color: white;
-  font-size: 2.5em;
   font-family: "poppins";
   font-weight: 700;
 }
@@ -88,6 +104,9 @@ section.hero-sec .land .intro-cont p {
   color: white;
   font-style: italic;
   text-shadow: 0px 0px 2px black;
+}
+section.hero-sec .land .intro-cont .cont-img, section.hero-sec .land .intro-cont .image {
+  display: none;
 }
 
 section.land-sect {
@@ -262,6 +281,9 @@ section.service .web p, section.service .gui p, section.service .game p {
 }
 
 @media only screen and (min-width: 500px) {
+  body {
+    width: 100%;
+  }
   .nav-container {
     border-bottom: 2px solid rgba(255, 255, 255, 0.123);
   }
@@ -291,26 +313,61 @@ section.service .web p, section.service .gui p, section.service .game p {
     display: flex;
     align-items: center;
   }
+  .hero-sec h1 {
+    font-size: 2.5em;
+  }
   .hero-sec .land {
     display: flex;
     align-items: center;
   }
-  .hero-sec .land .cont, .hero-sec .land .img-cont {
-    display: block;
-  }
-  .hero-sec .land .cont {
+  .hero-sec .land .intro-cont {
+    width: 100%;
     display: flex;
-    width: 400px;
-    height: 400px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero-sec .land .intro-cont .cont-img {
+    width: auto;
+    height: 40%;
+    display: flex;
+    gap: 1rem;
+  }
+  .hero-sec .land .intro-cont .cont-img .image {
+    height: 250px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: centers;
+  }
+  .hero-sec .land .intro-cont .cont-img .image:nth-child(1) {
+    background-image: url("../images/screen02.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: bottom;
+  }
+  .hero-sec .land .intro-cont .cont-img .image:nth-child(2) {
+    background-image: url("../images/screen00.jpg");
+    background-size: cover;
+    width: 350px;
+  }
+  .hero-sec .land .intro-cont .cont-img .image:nth-child(3) {
+    background-image: url("../images/screen04.jpg");
+    background-size: cover;
+  }
+  .hero-sec .land .cont-c {
+    display: block;
+    height: 350px;
+    width: 40%;
     background-image: url("../images/photo.jpg");
     background-size: cover;
     border-radius: 4em;
   }
-  .hero-sec .land .cont .img-cont {
-    display: block;
+  .hero-sec .land .cont-c .img-cont {
     height: 100%;
     width: 100%;
-    background-color: rgba(122, 151, 175, 0.342);
+    background-color: rgba(26, 113, 185, 0.253);
     border-radius: 50%;
   }
   section.land-sect {
