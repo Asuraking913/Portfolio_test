@@ -18,6 +18,11 @@
     src: url(../font/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: "mon";
+    src: url(../font/Montserrat-Regular.ttf);
+}
+
 body {
     background-color: #e2dfdf;
 }
@@ -25,7 +30,7 @@ body {
 .nav-container {
     background-image: linear-gradient(to right,rgb(148, 161, 172), rgb(26, 114, 185), rgb(26, 114, 185));
     width: auto;
-    padding: 1.5em;
+    padding: 1em;
     display: flex;
     align-items: center;
     
@@ -64,7 +69,7 @@ section.hero-sec {
         width: 100%;
         background-color: rgba(26, 113, 185, 0.678);
         background-size: contain;
-        padding: 4em;
+        padding: 4em 2em;
     }
 
     .land {
@@ -120,7 +125,7 @@ section.hero-sec {
                 text-shadow: 0px 0px 2px black;
             }
 
-            .cont-img, .image {
+             .image {
                 display: none;
             }
         }
@@ -189,7 +194,8 @@ section.land-sect {
         p {
             color: rgb(214, 211, 211);
             margin-top: .2em;
-            font-family: sans-serif;
+            font-family: Cambria;
+            font-weight: bold;
         }
 
         .list {
@@ -285,7 +291,8 @@ section.service {
         }
 
         p {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: Cambria;
+            font-weight: bold;
             color: white;
         }
 
@@ -304,6 +311,8 @@ section.service {
         text-align: center;
         flex-direction: column;
         padding: 1em;
+        font-family: Cambria;
+        font-weight: bold;
 
         h2 {
             text-transform: capitalize;
@@ -330,7 +339,7 @@ section.service {
     }
 }
 
-@media  only screen and (min-width: 500px) {
+@media  only screen and (min-width: 800px) {
     body {
         width: 100%;
     }
@@ -373,6 +382,11 @@ section.service {
         display: flex;
         align-items: center;
 
+        .img-cont-a {
+            // padding: 4em;
+            padding: 4em !important;
+        }
+
         h1 {
             font-size: 2.5em;
         }
@@ -380,26 +394,32 @@ section.service {
         .land {
             display: flex;
             align-items: center;
+            place-content: space-between;
 
             .intro-cont {
-                width: 100%;
+                width: 20px;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
+                gap: 1rem;
                 
                 
                 .cont-img {
                     width: auto;
                     height: 40%;
                     display: flex;
-                    gap: 1rem;
+                    gap: .5rem;
 
                     .image {
-                        height: 250px;
-                        width: 200px;
+                        height: 200px;
+                        width: 150px;
                         display: flex;
                         align-items: center;
-                        justify-content: centers;
+                        justify-content: center;
+                        font-family: "poppins";
+                        color: black;
+                        text-shadow: 0px 0px 0px blue;
+
                         
                         &:nth-child(1) {
                             background-image: url("../images/screen02.jpg");
@@ -413,7 +433,9 @@ section.service {
                         &:nth-child(2) {
                             background-image: url("../images/screen00.jpg");
                             background-size: cover;
-                            width: 350px;
+                            width: 300px;
+                            background-position-x: left;
+                            background-position-y: bottom;
                         }
 
                         &:nth-child(3) {
@@ -504,6 +526,8 @@ section.service {
         .cont1 {
             width: 60%;
             font-family: sans-serif;
+
+            
         }
 
         .cont2 {
