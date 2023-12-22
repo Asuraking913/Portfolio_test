@@ -55,6 +55,9 @@ body {
 section.hero-sec {
   background-image: url("../images/laptop-girl.png");
 }
+section.hero-sec img {
+  display: none;
+}
 section.hero-sec .img-cont-a {
   height: 100%;
   width: 100%;
@@ -134,12 +137,15 @@ section.land-sect .cont {
   justify-content: flex-start;
 }
 section.land-sect .my-img {
-  background-image: url("../images/photo1.jpg");
-  background-size: cover;
-  height: 300px;
+  height: 200px;
   width: 190px;
-  border-radius: 0.5em;
-  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.664);
+}
+section.land-sect .my-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section.land-sect .about {
   padding: 1.5em;
@@ -374,19 +380,22 @@ section.service .web p, section.service .gui p, section.service .game p {
     background-image: url("../images/screen04.jpg");
     background-size: cover;
   }
-  .hero-sec .land .cont-c {
+  .hero-sec .land .img1 {
     display: block;
     height: 350px;
-    width: 40%;
-    background-image: url("../images/photo.jpg");
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.651);
     background-size: cover;
-    border-radius: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 10px solid rgb(26, 114, 185);
+    border-top: 10px solid rgb(26, 114, 185);
   }
-  .hero-sec .land .cont-c .img-cont {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(26, 113, 185, 0.253);
-    border-radius: 50%;
+  .hero-sec .land .img1 img {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   section.land-sect {
     padding: 4em;
@@ -402,6 +411,10 @@ section.service .web p, section.service .gui p, section.service .game p {
     height: 500px;
     width: 80%;
     border-top-left-radius: 40em;
+    border-bottom-right-radius: 40em;
+  }
+  section.land-sect .my-img img {
+    border-bottom-right-radius: 30em;
   }
   section.land-sect .my-img .cont {
     height: 100%;
