@@ -468,10 +468,14 @@ section.service {
                 align-items: center;
                 border-left: 10px solid  rgb(26, 114, 185);
                 border-top: 10px solid  rgb(26, 114, 185);
+                border-radius: 2em;
 
                 img {
                     display: block;
                     object-fit: cover;
+                    height: 339px;
+                    width: 300px;
+                    border-radius: 2em;
                 }
             }
         }
@@ -491,14 +495,20 @@ section.service {
         }
 
         .my-img {
-            height: 500px;
-            width: 80%;
+            height: 400px;
+            width: 70%;
             border-top-left-radius: 40em;
             border-bottom-right-radius: 40em;
             // border-top-right-radius: 6em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             img {
                 border-bottom-right-radius: 30em;
+                width: 100%;
+                height: 100%;
+
             }
 
             .cont {

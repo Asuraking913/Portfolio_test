@@ -394,11 +394,15 @@ section.service .web p, section.service .gui p, section.service .game p {
     align-items: center;
     border-left: 10px solid rgb(26, 114, 185);
     border-top: 10px solid rgb(26, 114, 185);
+    border-radius: 2em;
   }
   .hero-sec .land .img1 img {
     display: block;
     -o-object-fit: cover;
        object-fit: cover;
+    height: 339px;
+    width: 300px;
+    border-radius: 2em;
   }
   section.land-sect {
     padding: 4em;
@@ -411,13 +415,18 @@ section.service .web p, section.service .gui p, section.service .game p {
     flex-direction: row;
   }
   section.land-sect .my-img {
-    height: 500px;
-    width: 80%;
+    height: 400px;
+    width: 70%;
     border-top-left-radius: 40em;
     border-bottom-right-radius: 40em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   section.land-sect .my-img img {
     border-bottom-right-radius: 30em;
+    width: 100%;
+    height: 100%;
   }
   section.land-sect .my-img .cont {
     height: 100%;
