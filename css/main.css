@@ -54,6 +54,7 @@ html {
   background-color: rgba(0, 0, 0, 0.24);
 }
 .nav-container .nav-cont nav #close-btn {
+  display: none;
   position: absolute;
   right: 0;
   color: white;
@@ -74,12 +75,6 @@ html {
   padding: 1em;
   height: 100vh;
   z-index: 1;
-}
-.nav-container .nav-cont nav ul .img-cont {
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .nav-container .nav-cont nav ul .img-cont img {
   width: 200px;
@@ -388,6 +383,11 @@ section.service .game p {
     list-style-type: none;
     gap: 2rem;
     height: auto;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .nav-container .nav-cont nav ul .img-cont {
+    display: none;
   }
   .nav-container .nav-cont nav ul a {
     text-decoration: none;
