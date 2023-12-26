@@ -6,7 +6,7 @@ const exitBtn = document.getElementById("close-btn");
 
 //event listeners
 menuIcon.addEventListener("click", function () {
-  nav.style.display = "block";
+  nav.style.display = "flex";
   menuIcon.style.display = "none";
   exitBtn.style.display = "block";
 });
