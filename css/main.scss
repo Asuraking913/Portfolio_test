@@ -51,7 +51,7 @@ html {
     height: 20px;
 
     nav {
-      // display: flex;
+      display: none;
       flex-direction: row;
       position: absolute;
       top: 0;
@@ -180,6 +180,7 @@ section.hero-sec {
         color: white;
         font-family: "poppins";
         font-weight: 700;
+        color: rgb(218, 162, 162);
       }
 
       h2 {

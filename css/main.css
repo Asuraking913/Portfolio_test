@@ -43,7 +43,7 @@ html {
   height: 20px;
 }
 .nav-container .nav-cont nav {
-  display: flex;
+  display: none;
   flex-direction: row;
   position: absolute;
   top: 0;
@@ -153,6 +153,7 @@ section.hero-sec .land .intro-cont h1 {
   color: white;
   font-family: "poppins";
   font-weight: 700;
+  color: rgb(218, 162, 162);
 }
 section.hero-sec .land .intro-cont h2 {
   color: white;
